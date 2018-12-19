@@ -1,9 +1,7 @@
 
-Mobile App Programming
-----------------------
-
-Prof. Gisuk Jung
-----------------
+Mobile App Programming [COMP328]
+--------------------------------
+Prof. GS Jung 
 
 
 Team Member
