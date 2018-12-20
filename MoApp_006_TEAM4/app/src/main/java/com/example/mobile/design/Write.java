@@ -11,20 +11,11 @@ class Write {
     private String object_info;
     private String table_name;
 
-    public Write(){
-
-    }
-    public Write(String Uid, String Title, String Content, String Date, String url) {
-        this.Uid = Uid;
-        this.Title = Title;
-        this.Content = Content;
-        this.Date = Date;
-        this.url = url;
-        this.object_info = null;
-        this.table_name = null;
+    public Write() {
     }
 
-    public Write(String Uid, String Title, String Content, String Date, String url,String object_info,String table_name) {
+    public Write(String uid, String Title, String Content, String Date, String url,String object_info,String table_name) {
+        //this.member = member;
         this.Uid = Uid;
         this.Title = Title;
         this.Content = Content;
@@ -32,6 +23,15 @@ class Write {
         this.url = url;
         this.object_info = object_info;
         this.table_name = table_name;
+
+    }
+
+    public Write(String Uid, String Content, String Date) {
+        //this.member = member;
+        this.Uid = Uid;
+        this.Content = Content;
+        this.Date = Date;
+
     }
 
     public String getUid() {
@@ -69,7 +69,6 @@ class Write {
     public void setUrl(String url) {
         this.url = url;
     }
-
     public String toString(){
         return Date + " " + Uid + " " + url + " ";
     }
