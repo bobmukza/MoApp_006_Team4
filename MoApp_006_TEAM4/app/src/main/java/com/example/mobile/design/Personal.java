@@ -14,7 +14,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.capstone.design.message.MessageActivity;
+import com.example.capstone.design.message.MsgMainActivity;
 import com.example.capstone.design.tool.CropCircle;
+import com.example.capstone.design.Help.HelpActivity;
 import com.example.capstone.design.tool.CropCircle;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -53,7 +56,8 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
     private TextView recent_notice;
     private static String UID;
     private int total_count=0;
-    private static String imageuri;
+    //
+
 
     // Required empty public constructor
     public Personal(){ }
@@ -63,6 +67,8 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
     public static String getEmail() { return useremail; }
 
     public static String getUid() { return UID; }
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -138,7 +144,6 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
                 public void onSuccess(Uri uri) {
                     // Got the download URL for 'users/me/profile.png'
                     Picasso.with(Personal.this.getContext()).load(uri.toString()).transform(new CropCircle()).into(image);
-                    imageuri=uri.toString();
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override
@@ -181,13 +186,13 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
 
 
         // 자신이 작성한 글 보러가기
-        script.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), MyScript.class);
-                startActivity(intent);
-            }
-        });
+//        script.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(getActivity(), MyScript.class);
+//                startActivity(intent);
+//            }
+//        });
 
         //전체 공지 보기
 
@@ -217,8 +222,8 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
         btn_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
- //               Intent intent = new Intent(getActivity(), HelpActivity.class);
- //               startActivity(intent);
+                Intent intent = new Intent(getActivity(), HelpActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -227,10 +232,14 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
         btn_msg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent intent = new Intent(getActivity(), MsgMainActivity.class);
-             //   startActivity(intent);
+                Intent intent = new Intent(getActivity(), MsgMainActivity.class);
+                startActivity(intent);
             }
         });
+
+
+
+
 
         recent_notice = (TextView) view.findViewById(text_contentOfNotice);
         tv_NAME = (TextView) view.findViewById(R.id.name);

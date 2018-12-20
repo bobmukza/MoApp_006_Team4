@@ -3,7 +3,6 @@ package com.example.capstone.design;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +19,8 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> { /
         ImageView item_Picture;
         TextView item_Title;
         TextView item_Date;
+        String UID;
+        String Obj_info;
 
         View view;
 
@@ -52,7 +53,6 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> { /
         myViewHolder.item_Title.setText(itemInfoArrayList.get(position).getTitle());
         myViewHolder.item_Date.setText(itemInfoArrayList.get(position).getDate());
 
-
         myViewHolder.itemView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -62,6 +62,7 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> { /
                 intent.putExtra("TITLE",itemInfoArrayList.get(position).getTitle());
                 intent.putExtra("UID",itemInfoArrayList.get(position).getUid());
                 intent.putExtra("URL",itemInfoArrayList.get(position).getUrl());
+                intent.putExtra("UID",itemInfoArrayList.get(position).getUid());
                 intent.putExtra("Board_info",itemInfoArrayList.get(position).getObjInfo());
                 intent.putExtra("Table_name",itemInfoArrayList.get(position).getTable_name());
                 v.getContext().startActivity(intent);
