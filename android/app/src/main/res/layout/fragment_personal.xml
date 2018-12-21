@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Personal">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/profile_background"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/profile_background" />
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/background_invisible" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffff"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/nation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#ffff" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="180dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/my_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nation"
+            android:layout_toStartOf="@+id/btn_help"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ALARM"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/my_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nation"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="SCRIPT"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/my_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/nation"
+            android:layout_alignParentEnd="false"
+            android:layout_weight="1"
+            android:autoText="false"
+            android:gravity="center"
+            android:text="MESSAGE"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/my_alarm_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_script"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/my_script_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:id="@+id/my_message_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_script"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.33"
+            android:fontFamily="@font/noto_sans"
+            android:gravity="center"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_background"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:text="SEE ALL"
+        android:textAlignment="textEnd"
+        android:textColor="#1c47f4" />
+
+    <TextView
+        android:id="@+id/text_notice"
+        android:layout_width="88dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/profile_background"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="NOTICE"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_category"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@+id/text_notice"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="41dp"
+        android:text="CATEGORY"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_contentOfNotice"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/text_notice"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:text="content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_category"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_market"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_category"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@drawable/btn_market" />
+
+        <Button
+            android:id="@+id/btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_category"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/btn_market"
+            android:layout_weight="1"
+            android:background="@drawable/btn_help" />
+
+        <Button
+            android:id="@+id/btn_msgbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_category"
+            android:layout_marginStart="7dp"
+            android:layout_toEndOf="@+id/btn_help"
+            android:layout_weight="1"
+            android:background="@drawable/btn_msgbox" />
+
+    </LinearLayout>
+
+</RelativeLayout>
