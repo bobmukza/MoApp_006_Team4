@@ -227,16 +227,6 @@ public class Personal extends Fragment { //main화면 창 각 버튼 클릭시 �
             }
         });
 
-        //메시지 보기
-        Button btn_msg = (Button) view.findViewById(R.id.btn_msgbox);
-        btn_msg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), MsgMainActivity.class);
-                startActivity(intent);
-            }
-        });
-
 
 
 

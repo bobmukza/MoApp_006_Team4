@@ -144,17 +144,6 @@
             android:textColor="#ffff" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/notice_all"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/profile_background"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="1dp"
-        android:text="SEE ALL"
-        android:textAlignment="textEnd"
-        android:textColor="#1c47f4" />
 
     <TextView
         android:id="@+id/text_notice"
@@ -225,7 +214,7 @@
             android:background="@drawable/btn_help" />
 
         <Button
-            android:id="@+id/btn_msgbox"
+            android:id="@+id/notice_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text_category"
@@ -233,6 +222,7 @@
             android:layout_toEndOf="@+id/btn_help"
             android:layout_weight="1"
             android:background="@drawable/btn_msgbox" />
+
 
     </LinearLayout>
 
