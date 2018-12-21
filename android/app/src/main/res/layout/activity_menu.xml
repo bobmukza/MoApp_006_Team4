@@ -37,7 +37,7 @@
         android:fontFamily="@font/noto_sans"
         android:text="GITHUB"
         android:textColor="#ffff" />
-    
+
 
     <Button
         android:id="@+id/logout_btn"

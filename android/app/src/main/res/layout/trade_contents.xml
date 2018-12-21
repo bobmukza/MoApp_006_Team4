@@ -11,7 +11,7 @@
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/gradient"
         android:theme="@style/AppTheme">
 
         <android.support.v7.widget.Toolbar
@@ -20,7 +20,7 @@
             android:layout_height="?attr/actionBarSize"
             android:theme="@style/AppTheme.OverFlow"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="KNUEARTH"
+            app:title="KNUNIVERSE"
             app:titleTextColor="#ffff" />
     </android.support.design.widget.AppBarLayout>
 

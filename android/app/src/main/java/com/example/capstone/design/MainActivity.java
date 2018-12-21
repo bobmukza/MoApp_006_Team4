@@ -124,6 +124,7 @@ public class MainActivity extends AppCompatActivity{
         //get a email
         sm_email = (TextView)findViewById(R.id.tv_sm_email);
         sm_email.setText(Personal.getEmail());
+        /*
         //go to international affair web
         Button btn_international = (Button) findViewById(R.id.btn_international);
         btn_international.setOnClickListener(new View.OnClickListener() {
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity{
                 Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("https://gp.knu.ac.kr/"));
                 startActivity(web);
             }
-        });
+        });*/
         //go to our git
         Button btn_git = (Button) findViewById(R.id.btn_git);
         btn_git.setOnClickListener(new View.OnClickListener() {

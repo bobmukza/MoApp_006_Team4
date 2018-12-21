@@ -117,7 +117,7 @@
             android:gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="#050505" />
+            android:textColor="#ffff" />
 
         <TextView
             android:id="@+id/my_script_num"
@@ -128,7 +128,7 @@
             android:gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="#050505" />
+            android:textColor="#ffff" />
 
         <TextView
             android:id="@+id/my_message_num"
@@ -141,7 +141,7 @@
             android:gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="#050505" />
+            android:textColor="#ffff" />
     </LinearLayout>
 
 
