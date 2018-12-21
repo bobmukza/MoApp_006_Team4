@@ -36,7 +36,7 @@
         android:layout_marginTop="1dp"
         android:gravity="center"
         android:text=""
-        android:textColor="#ffff"
+        android:textColor="#050505"
         android:textSize="20dp" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text=""
-        android:textColor="#ffff" />
+        android:textColor="#050505" />
 
 
     <LinearLayout
@@ -69,7 +69,7 @@
             android:gravity="center"
             android:text="ALARM"
             android:textAlignment="center"
-            android:textColor="#ffff" />
+            android:textColor="#050505" />
 
         <TextView
             android:id="@+id/my_script"
@@ -81,7 +81,7 @@
             android:gravity="center"
             android:text="SCRIPT"
             android:textAlignment="center"
-            android:textColor="#ffff" />
+            android:textColor="#050505" />
 
         <TextView
             android:id="@+id/my_msg"
@@ -94,7 +94,7 @@
             android:gravity="center"
             android:text="MESSAGE"
             android:textAlignment="center"
-            android:textColor="#ffff" />
+            android:textColor="#050505" />
 
     </LinearLayout>
 
@@ -117,7 +117,7 @@
             android:gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="#ffff" />
+            android:textColor="#050505" />
 
         <TextView
             android:id="@+id/my_script_num"
@@ -128,7 +128,7 @@
             android:gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="#ffff" />
+            android:textColor="#050505" />
 
         <TextView
             android:id="@+id/my_message_num"
@@ -141,7 +141,7 @@
             android:gravity="center"
             android:text="0"
             android:textAlignment="center"
-            android:textColor="#ffff" />
+            android:textColor="#050505" />
     </LinearLayout>
 
 
@@ -165,7 +165,7 @@
         android:layout_below="@+id/text_notice"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="98dp"
+        android:layout_marginTop="68dp"
         android:text="CATEGORY"
         android:textColor="@android:color/black"
         android:textSize="20dp"
@@ -174,7 +174,7 @@
     <TextView
         android:id="@+id/text_contentOfNotice"
         android:layout_width="match_parent"
-        android:layout_height="94dp"
+        android:layout_height="64dp"
         android:layout_below="@+id/text_notice"
         android:layout_alignParentStart="true"
         android:layout_marginStart="0dp"
