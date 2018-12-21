@@ -24,7 +24,7 @@
         android:layout_height="100dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/background_invisible" />
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_marginTop="1dp"
         android:gravity="center"
         android:text=""
-        android:textColor="#050505"
+        android:textColor="#ffff"
         android:textSize="20dp" />
 
     <TextView
