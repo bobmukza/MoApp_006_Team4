@@ -57,7 +57,7 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
                         android:gravity="center"
-                        android:text="KNUIVERSE"
+                        android:text="KNUNIVERSE"
                         android:textColor="#ffff"
                         android:textSize="27sp" />
 
