@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:text=""
-        android:textColor="#050505" />
+        android:textColor="#ffff" />
 
 
     <LinearLayout
@@ -69,7 +69,7 @@
             android:gravity="center"
             android:text="ALARM"
             android:textAlignment="center"
-            android:textColor="#050505" />
+            android:textColor="#ffff" />
 
         <TextView
             android:id="@+id/my_script"
@@ -81,7 +81,7 @@
             android:gravity="center"
             android:text="SCRIPT"
             android:textAlignment="center"
-            android:textColor="#050505" />
+            android:textColor="#ffff" />
 
         <TextView
             android:id="@+id/my_msg"
@@ -94,7 +94,7 @@
             android:gravity="center"
             android:text="MESSAGE"
             android:textAlignment="center"
-            android:textColor="#050505" />
+            android:textColor="#ffff" />
 
     </LinearLayout>
 

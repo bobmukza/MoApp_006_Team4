@@ -138,11 +138,11 @@ public class MainActivity extends AppCompatActivity{
         btn_git.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/zwei2/knu-2018-capstone"));
+                Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/bobmukza/MoApp_006_Team4"));
                 startActivity(web);
             }
         });
-        //go to our web
+        /*//go to our web
         Button btn_mainweb = (Button) findViewById(R.id.btn_mainweb);
         btn_mainweb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -150,8 +150,7 @@ public class MainActivity extends AppCompatActivity{
                 Intent web = new Intent(Intent.ACTION_VIEW, Uri.parse("http:iamwooki.gonetis.com:8080"));
                 startActivity(web);
             }
-        });
-
+        });*/
         //setting 버튼 누르면 슬라이드 메뉴로 세팅 화면 보여줌
         btn_slide_menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,7 +161,8 @@ public class MainActivity extends AppCompatActivity{
             }
         });
 
-        //프로필 관리
+
+        /*//프로필 관리
         Button btn = (Button) findViewById(R.id.profile_admin);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -171,7 +171,7 @@ public class MainActivity extends AppCompatActivity{
                 Intent intent = new Intent(MainActivity.this, ProfileAdmin.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         //로그아웃
         Button btn_logout = (Button) findViewById(R.id.logout_btn);
